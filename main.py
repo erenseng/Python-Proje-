@@ -4,17 +4,15 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QTimer, QTime, Qt,QDateTime
-
+# import library
 class pencere(QDialog):
     def __init__(self):
         super().__init__()
         self.arayuz()
-
     def arayuz(self):
         self.grid = QGridLayout()
         self.gonderen = QLineEdit()
         self.yazi1 = QLabel("From: ")
-
         self.parola = QLineEdit()
         self.yazi6 = QLabel("Password: ")
         self.parola.setEchoMode(QLineEdit.Password)
@@ -92,8 +90,8 @@ class pencere(QDialog):
         except:
             sys.stderr.write("Bir sorun oluştu. Süreçleri kontrol ediniz.")
             sys.stderr.flush()
-
-
+    def send():
+        pass
 app = QApplication(sys.argv)
 pencere = pencere()
 sys.exit(app.exec_())
