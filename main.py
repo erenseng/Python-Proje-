@@ -92,8 +92,8 @@ class pencere(QDialog):
         except:
             sys.stderr.write("Bir sorun oluştu. Süreçleri kontrol ediniz.")
             sys.stderr.flush()
-
-
+    def email_attachment():
+        pass
 app = QApplication(sys.argv)
 pencere = pencere()
 sys.exit(app.exec_())
